@@ -1,0 +1,921 @@
+/* Estilos gerais (aplicados a todas as páginas) */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte principal da página */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    color: #333; /* Define a cor do texto principal */
+    background-color: #f8f9fa; /* Define a cor de fundo da página */
+}
+
+/* Cabeçalho */
+header {
+    background: #000075; /* Define a cor de fundo do cabeçalho */
+    padding: 15px 0; /* Define o padding acima e abaixo no cabeçalho */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave abaixo do cabeçalho */
+}
+
+.container {
+    display: flex; /* Utiliza flexbox para distribuir os elementos */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Cria espaçamento igual entre os elementos */
+    width: 90%; /* Define a largura da container para 90% da tela */
+    margin: auto; /* Centraliza a container horizontalmente */
+}
+
+.logo img {
+    width: 150px; /* Define a largura da imagem do logo */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Utiliza flexbox para distribuir os itens de navegação */
+    padding: 0; /* Remove o padding padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+}
+
+nav ul li {
+    margin: 0 20px; /* Adiciona espaçamento horizontal entre os itens da lista */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Define a cor do texto do link como branco */
+    font-size: 18px; /* Define o tamanho da fonte do link */
+    font-weight: bold; /* Torna o texto do link em negrito */
+    transition: 0.3s; /* Adiciona transição suave para as mudanças de estilo */
+}
+
+nav ul li a:hover {
+    color: #f8f9fa; /* Muda a cor do texto para um tom mais claro ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Seção Hero (Banner Principal) */
+.hero {
+    background: url('banner.jpg') no-repeat center center/cover; /* Define uma imagem de fundo para o banner */
+    height: 80vh; /* Define a altura do banner como 80% da altura da tela */
+    display: flex; /* Utiliza flexbox para alinhar os itens no banner */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    color: white; /* Define a cor do texto como branco */
+    text-align: center; /* Alinha o texto no centro */
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área do banner */
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6); /* Cria um fundo semi-transparente para melhorar a legibilidade do texto */
+    padding: 40px; /* Adiciona espaçamento interno na área de conteúdo */
+    border-radius: 10px; /* Cria bordas arredondadas */
+}
+
+.hero h1 {
+    font-size: 36px; /* Define o tamanho da fonte do título */
+    margin-bottom: 15px; /* Adiciona espaço abaixo do título */
+}
+
+.hero p {
+    font-size: 20px; /* Define o tamanho da fonte do parágrafo */
+    margin-bottom: 25px; /* Adiciona espaço abaixo do parágrafo */
+}
+
+.botao {
+    background: #28a745; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão como branco */
+    padding: 15px 30px; /* Define o preenchimento interno do botão */
+    text-decoration: none; /* Remove o sublinhado do botão */
+    font-size: 20px; /* Define o tamanho da fonte do botão */
+    border-radius: 5px; /* Cria bordas arredondadas no botão */
+    transition: 0.3s; /* Adiciona transição suave para o hover */
+}
+
+.botao:hover {
+    background: #218838; /* Muda a cor de fundo do botão ao passar o mouse */
+}
+
+/* Seção Vantagens */
+.vantagens {
+    text-align: center; /* Alinha o texto da seção de vantagens no centro */
+    padding: 50px 20px; /* Adiciona espaçamento interno na seção de vantagens */
+}
+
+.vantagem-box {
+    display: flex; /* Utiliza flexbox para distribuir as vantagens */
+    justify-content: center; /* Alinha as vantagens ao centro */
+    gap: 30px; /* Adiciona espaçamento entre as vantagens */
+}
+
+.vantagem {
+    background: white; /* Define o fundo branco para cada vantagem */
+    padding: 20px; /* Define o preenchimento interno da vantagem */
+    border-radius: 8px; /* Cria bordas arredondadas nas caixas de vantagem */
+    width: 300px; /* Define a largura das caixas de vantagem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao redor das caixas de vantagem */
+}
+
+.vantagem img {
+    width: 80px; /* Define a largura das imagens nas vantagens */
+    margin-bottom: 15px; /* Adiciona espaço abaixo das imagens */
+}
+
+.vantagem h3 {
+    color: #007bff; /* Define a cor do título das vantagens */
+}
+
+/* Seção Como Funciona */
+.como-funciona {
+    text-align: center; /* Alinha o texto da seção "Como Funciona" no centro */
+    padding: 50px 20px; /* Adiciona espaçamento interno na seção */
+    background: #fff; /* Define o fundo da seção como branco */
+}
+
+.passos {
+    display: flex; /* Utiliza flexbox para distribuir os passos */
+    justify-content: center; /* Alinha os passos ao centro */
+    gap: 30px; /* Adiciona espaçamento entre os passos */
+}
+
+.passo {
+    background: #f1f1f1; /* Define o fundo de cada passo */
+    padding: 20px; /* Define o preenchimento interno dos passos */
+    border-radius: 8px; /* Cria bordas arredondadas nos passos */
+    width: 250px; /* Define a largura de cada passo */
+}
+
+.passo h3 {
+    color: #007bff; /* Define a cor do título dos passos */
+}
+
+/* Rodapé */
+footer {
+    background: #333; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto do rodapé como branco */
+    text-align: center; /* Alinha o texto no centro */
+    padding: 15px; /* Define o preenchimento interno do rodapé */
+}
+
+/* 🔹 Seção Hero Modificada */ 
+#home .hero {
+    background: url('banner-principal.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    min-height: 85vh;
+    padding: 25px;
+    border-bottom: 6px solid #27ae60; /* Linha de destaque mais intensa */
+}
+
+#home .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 45px;
+    border-radius: 15px;
+    max-width: 75%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+#home .hero h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
+}
+
+#home .hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Botão aprimorado */
+#home .hero .botao {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    padding: 16px 34px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#home .hero .botao:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: scale(1.07);
+}
+
+/* 🔹 Destaque (Estilo e-commerce) */
+#home .destaque {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#home .slider {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+#home .slide {
+    width: 100%;
+    position: relative;
+}
+
+#home .slide img {
+    width: 800px; /* Ajusta a largura da imagem para 80% da largura do container */
+    max-width: 1200px; /* Limita a largura máxima da imagem */
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block;
+}
+
+
+#home .slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Aumentar a opacidade para maior contraste */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Melhorando a legibilidade */
+}
+
+#home .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 24px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+#home .btn:hover {
+    background: #cc5200; /* Mudança na cor do botão ao passar o mouse */
+}
+
+#home .slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 15px;
+    z-index: 2;
+}
+
+#home .slider-controls span {
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+#home .slider-controls span:hover {
+    background: rgba(255, 102, 0, 0.8); /* Efeito de hover para as setas */
+}
+
+/* Adicionando uma melhoria de transição para a navegação */
+#home .slider-controls span:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 102, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    #home .slide-text {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    #home .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    #home .slider-controls span {
+        font-size: 25px;
+        padding: 12px;
+    }
+}
+
+
+/* 🔹 Categorias de Serviços */
+#home .categorias {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#home .categorias h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#home .categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#home .categoria {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#home .categoria img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#home .categoria h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#home .btn-categoria {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* 🔹 Vantagens aprimoradas */
+.vantagens {
+    padding: 70px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.vantagens h2 {
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 45px;
+    color: #222;
+}
+
+.vantagem-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.vantagem {
+    background-color: white;
+    border-radius: 14px;
+    padding: 25px;
+    width: 290px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vantagem:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Responsividade aprimorada */
+@media (max-width: 768px) {
+    #home .hero {
+        min-height: 75vh;
+        padding: 15px;
+    }
+
+    #home .hero h1 {
+        font-size: 34px;
+    }
+
+    #home .hero p {
+        font-size: 20px;
+    }
+
+    #home .hero .botao {
+        font-size: 20px;
+        padding: 14px 28px;
+    }
+
+    .vantagem-box, .passos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vantagem, .passo {
+        width: 92%;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+/* 🔹 Página "Sou Profissional" */
+#sou-profissional .hero {
+    background: url('banner-profissional.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: center;
+}
+
+#sou-profissional .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔹 Estilo para o título da seção "hero" */
+#sou-profissional .hero h1 {
+    font-size: 48px; /* Tamanho de fonte maior para atrair atenção */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    font-weight: 700; /* Deixa o título em negrito para maior ênfase */
+    letter-spacing: 1px; /* Espaçamento entre as letras para melhorar a legibilidade */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* 🔹 Estilo para o parágrafo da seção "hero" */
+#sou-profissional .hero p {
+    font-size: 20px; /* Tamanho de fonte do parágrafo */
+    max-width: 600px; /* Limita a largura do texto para melhorar a legibilidade */
+    margin: auto; /* Centraliza o parágrafo horizontalmente */
+    line-height: 1.6; /* Espaçamento entre as linhas para facilitar a leitura */
+    font-weight: 400; /* Fonte normal para o parágrafo */
+    text-align: center; /* Centraliza o texto do parágrafo */
+}
+
+
+#sou-profissional .hero a.botao {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+#sou-profissional .hero a.botao:hover {
+    background: #218838;
+}
+
+/* 🔹 Seção principal da página */
+#sou-profissional .container {
+    max-width: 1200px;
+    padding: 50px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* 🔹 Blocos de informação */
+#sou-profissional .info-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 30px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+#sou-profissional .info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#sou-profissional .info-box h2 {
+    color: #007bff;
+    font-size: 30px; /* Aumenta o tamanho do título */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#sou-profissional .info-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* 🔹 Formulário de Cadastro */
+#sou-profissional .cadastro form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#sou-profissional .cadastro form .campo {
+    margin-bottom: 15px;
+}
+
+#sou-profissional .cadastro form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#sou-profissional .cadastro form input,
+#sou-profissional .cadastro form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+#sou-profissional .cadastro form input:focus,
+#sou-profissional .cadastro form select:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+/* 🔹 Botão de Cadastro */
+#sou-profissional .cadastro button.botao {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#sou-profissional .cadastro button.botao:hover {
+    background: #218838;
+}
+
+/* 🔹 Chamada de ação abaixo do formulário */
+#sou-profissional .chamada {
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+    /* Seção Hero */
+    #sou-profissional .hero {
+        height: 60vh;
+    }
+
+    #sou-profissional .hero h1 {
+        font-size: 32px;
+    }
+
+    #sou-profissional .hero p {
+        font-size: 18px;
+    }
+
+    /* Container de conteúdo */
+    #sou-profissional .container {
+        padding: 20px;
+        align-items: center;
+    }
+
+    /* Info Boxes */
+    #sou-profissional .info-box {
+        padding: 20px;
+        width: 100%;
+    }
+
+    /* Botão */
+    #sou-profissional .botao {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
+
+
+
+/* Estilos para a seção de cadastro */
+#preciso-servico .cadastro {
+    background: #f7f7f7;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#preciso-servico .cadastro h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#preciso-servico .cadastro p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+#preciso-servico .cadastro .campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#preciso-servico .cadastro .campo label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#preciso-servico .cadastro .campo input,
+#preciso-servico .cadastro .campo select,
+#preciso-servico .cadastro .campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#preciso-servico .cadastro .campo input:focus,
+#preciso-servico .cadastro .campo select:focus,
+#preciso-servico .cadastro .campo textarea:focus {
+    border-color: #ff5733;
+    outline: none;
+}
+
+#preciso-servico .cadastro .campo select,
+#preciso-servico .cadastro .campo textarea {
+    resize: vertical;
+}
+
+#preciso-servico .cadastro .botao {
+    background-color: #ff5733;
+    color: white;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+#preciso-servico .cadastro .botao:hover {
+    background-color: #c9452b;
+    transform: scale(1.05);
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    #preciso-servico .cadastro {
+        padding: 30px 15px;
+    }
+
+    #preciso-servico .cadastro h2 {
+        font-size: 2rem;
+    }
+
+    #preciso-servico .cadastro .campo input,
+    #preciso-servico .cadastro .campo select,
+    #preciso-servico .cadastro .campo textarea {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* 🔹 Estilização da seção de resultados */
+.resultados {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resultados h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.grid-profissionais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-profissional {
+    background: #f9f9f9;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-profissional:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-profissional img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff5733;
+    margin-bottom: 15px;
+}
+
+.card-profissional h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.card-profissional p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.card-profissional .botao {
+    display: inline-block;
+    background: #ff5733;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.card-profissional .botao:hover {
+    background: #d84315;
+    transform: scale(1.05);
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+    .grid-profissionais {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* 🔹 ESTILOS EXCLUSIVOS PARA A PÁGINA DE CONTATO */
+#contato .hero {
+    background: url('banner-contato.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+#contato .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#contato .contato {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#contato .info-contato {
+    width: 45%;
+}
+
+#contato .info-contato h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#contato .dados-contato p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#contato .redes-sociais a img {
+    width: 40px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+#contato .redes-sociais a img:hover {
+    transform: scale(1.1);
+}
+
+#contato .formulario-contato {
+    width: 50%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contato .formulario-contato h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#contato form input,
+#contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contato form button {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#contato form button:hover {
+    background: #218838;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #contato .contato {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contato .info-contato,
+    #contato .formulario-contato {
+        width: 100%;
+    }
+}
+
+#contato form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Profissionais - Plataforma de Serviços</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="buscar-profissionais">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/slogo1.png" alt="Logo Plataforma">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro_profissional.html">Sou Profissional</a></li>
+                    <li><a href="cadastro_cliente.html">Preciso de um Serviço</a></li>
+                    <li><a href="buscar.html" class="ativo">Buscar Profissionais</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Encontre o Profissional Ideal</h1>
+            <p>Busque especialistas qualificados para atender sua necessidade.</p>
+        </div>
+    </section>
+
+    <section class="buscar">
+        <h2>Busque Profissionais</h2>
+        <form action="#" method="GET">
+            <input type="text" name="profissao" placeholder="Digite a profissão ou serviço">
+            <input type="text" name="cidade" placeholder="Digite sua cidade">
+            <select name="avaliacao">
+                <option value="">Filtrar por Avaliação</option>
+                <option value="5">⭐⭐⭐⭐⭐ (5 estrelas)</option>
+                <option value="4">⭐⭐⭐⭐ (4 estrelas ou mais)</option>
+                <option value="3">⭐⭐⭐ (3 estrelas ou mais)</option>
+            </select>
+            <button type="submit" class="botao">Buscar</button>
+        </form>
+    </section>
+
+    <section class="resultados">
+        <h2>Resultados da Busca</h2>
+        <div class="grid-profissionais">
+
+            <div class="card-profissional">
+                <img src="img/kl.png" alt="Foto do Profissional">
+                <h3>João Silva</h3>
+                <p>Eletricista | 8 anos de experiência</p>
+                <p>⭐⭐⭐⭐⭐ (5.0 - 120 avaliações)</p>
+                <a href="perfil_profissional.html?profissional=joao-silva" class="botao">Ver Perfil</a>
+            </div>
+
+            <div class="card-profissional">
+                <img src="img/kl.png" alt="Foto do Profissional">
+                <h3>Maria Souza</h3>
+                <p>Faxineira Profissional | 5 anos de experiência</p>
+                <p>⭐⭐⭐⭐ (4.8 - 95 avaliações)</p>
+                <a href="perfil_profissional.html?profissional=maria-souza" class="botao">Ver Perfil</a>
+            </div>
+
+            <div class="card-profissional">
+                <img src="img/kl.png" alt="Foto do Profissional">
+                <h3>Ricardo Almeida</h3>
+                <p>Pedreiro | 12 anos de experiência</p>
+                <p>⭐⭐⭐⭐⭐ (4.9 - 150 avaliações)</p>
+                <a href="perfil_profissional.html?profissional=ricardo-almeida" class="botao">Ver Perfil</a>
+            </div>
+
+            <div class="card-profissional">
+                <img src="img/kl.png" alt="Foto do Profissional">
+                <h3>João Silva</h3>
+                <p>Eletricista | 8 anos de experiência</p>
+                <p>⭐⭐⭐⭐⭐ (5.0 - 120 avaliações)</p>
+                <a href="perfil_profissional.html?profissional=joao-silva" class="botao">Ver Perfil</a>
+            </div>
+
+            <div class="card-profissional">
+                <img src="img/kl.png" alt="Foto do Profissional">
+                <h3>Maria Souza</h3>
+                <p>Faxineira Profissional | 5 anos de experiência</p>
+                <p>⭐⭐⭐⭐ (4.8 - 95 avaliações)</p>
+                <a href="perfil_profissional.html?profissional=maria-souza" class="botao">Ver Perfil</a>
+            </div>
+
+            <div class="card-profissional">
+                <img src="img/kl.png" alt="Foto do Profissional">
+                <h3>Ricardo Almeida</h3>
+                <p>Pedreiro | 12 anos de experiência</p>
+                <p>⭐⭐⭐⭐⭐ (4.9 - 150 avaliações)</p>
+                <a href="perfil_profissional.html?profissional=ricardo-almeida" class="botao">Ver Perfil</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Plataforma de Serviços - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

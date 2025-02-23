@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preciso de um Serviço - Plataforma de Serviços</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="preciso-servico">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/slogo1.png" alt="Logo Plataforma">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro_profissional.html">Sou Profissional</a></li>
+                    <li><a href="cadastro_cliente.html" class="ativo">Preciso de um Serviço</a></li>
+                    <li><a href="buscar.html">Buscar Profissionais</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Solicite um Serviço</h1>
+            <p>Encontre o profissional ideal para sua necessidade.</p>
+            <a href="#solicitar" class="botao">Quero solicitar um serviço</a>
+        </div>
+    </section>
+
+    <section class="como-funciona">
+        <h2>Como Funciona?</h2>
+        <div class="passos">
+            <div class="passo">
+                <h3>1. Faça um Pedido</h3>
+                <p>Descreva o que precisa e receba orçamentos.</p>
+            </div>
+            <div class="passo">
+                <h3>2. Compare Profissionais</h3>
+                <p>Escolha pelo preço, avaliações e experiência.</p>
+            </div>
+            <div class="passo">
+                <h3>3. Serviço Concluído</h3>
+                <p>Receba o atendimento e avalie o profissional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cadastro" id="solicitar">
+        <h2>Solicite um Serviço</h2>
+        <p>Preencha os campos abaixo com as informações do serviço que você precisa. Um profissional entrará em contato com você em breve.</p>
+    
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="nome">Seu Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+    
+            <div class="campo">
+                <label for="email">Seu E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+    
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
+            </div>
+    
+            <div class="campo">
+                <label for="categoria">Categoria do Serviço</label>
+                <select name="categoria" id="categoria" required>
+                    <option value="">Selecione a categoria</option>
+                    <option value="reforma">Reforma</option>
+                    <option value="manutencao">Manutenção</option>
+                    <option value="limpeza">Limpeza</option>
+                    <option value="design">Design e Decoração</option>
+                </select>
+            </div>
+    
+            <div class="campo">
+                <label for="tipo_servico">Tipo de Serviço</label>
+                <select name="tipo_servico" id="tipo_servico" required>
+                    <option value="">Selecione o tipo de serviço</option>
+                    <option value="elétrica">Elétrica</option>
+                    <option value="hidráulica">Hidráulica</option>
+                    <option value="pintura">Pintura</option>
+                    <option value="móveis">Montagem de Móveis</option>
+                    <option value="limpeza-geral">Limpeza Geral</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+    
+            <div class="campo">
+                <label for="descricao">Descrição do Serviço</label>
+                <textarea name="descricao" id="descricao" placeholder="Descreva o serviço que precisa" required></textarea>
+            </div>
+    
+            <button type="submit" class="botao">Enviar Pedido</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Plataforma de Serviços - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

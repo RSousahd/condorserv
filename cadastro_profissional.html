@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja um Profissional - Plataforma de Serviços</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="sou-profissional">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/slogo1.png" alt="Logo Plataforma">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro_profissional.html" class="ativo">Sou Profissional</a></li>
+                    <li><a href="cadastro_cliente.html">Preciso de um Serviço</a></li>
+                    <li><a href="buscar.html">Buscar Profissionais</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Cadastre-se como Profissional</h1>
+            <p>Expanda sua clientela e aumente sua renda com nossa plataforma.</p>
+            <a href="#cadastro" class="botao">Quero me cadastrar</a>
+        </div>
+    </section>
+
+    <section class="vantagens">
+        <h2>Vantagens para Profissionais</h2>
+        <div class="vantagem-box">
+            <div class="vantagem">
+                <img src="jobs.png" alt="Trabalhos">
+                <h3>Mais Oportunidades</h3>
+                <p>Receba solicitações de clientes diretamente pelo site.</p>
+            </div>
+            <div class="vantagem">
+                <img src="pagamento.png" alt="Pagamentos">
+                <h3>Pagamento Seguro</h3>
+                <p>Receba seus pagamentos de forma rápida e segura.</p>
+            </div>
+            <div class="vantagem">
+                <img src="avaliacoes.png" alt="Avaliações">
+                <h3>Construa sua Reputação</h3>
+                <p>Clientes deixam avaliações, ajudando a aumentar sua credibilidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cadastro" id="cadastro">
+        <h2>Cadastre-se agora e conquiste mais clientes!</h2>
+        <p>Preencha o formulário abaixo e comece a expandir sua carreira. Estamos esperando por você!</p>
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
+            </div>
+            <div class="campo">
+                <label for="categoria">Selecione sua área de atuação</label>
+                <select name="categoria" id="categoria" required>
+                    <option value="">Selecione sua área</option>
+                    <option value="construcao">Construção</option>
+                    <option value="limpeza">Limpeza</option>
+                    <option value="aulas">Aulas Particulares</option>
+                    <option value="eletrica">Elétrica</option>
+                    <option value="marcenaria">Marcenaria</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="experiencia">Anos de Experiência</label>
+                <input type="number" name="experiencia" id="experiencia" placeholder="Quantos anos de experiência você tem?" required>
+            </div>
+            <div class="campo">
+                <label for="portfolio">Link para seu Portfólio (opcional)</label>
+                <input type="url" name="portfolio" id="portfolio" placeholder="Exemplo: www.portfolio.com">
+            </div>
+            <button type="submit" class="botao">Cadastrar</button>
+        </form>
+        <p class="chamada">Está pronto para conquistar mais clientes e transformar sua carreira? Não perca tempo, cadastre-se agora e aumente suas chances!</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Plataforma de Serviços - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
